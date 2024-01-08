@@ -1,0 +1,11 @@
+version:  "3.7"
+
+services:
+  simplehello:
+    container_name: simplehello
+    # image: francescoxx/mlapp
+    ports:
+      - "80:80"
+    build:
+      context: .
+      dockerfile: Dockerfile
